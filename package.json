@@ -3,8 +3,11 @@
   "version": "0.0.1",
   "description": "A little utility that allows for calculating and keeping track of differences in values.",
   "main": "index.js",
-  "author": "tymski <tymon.oziemblewski@gmail.com",
-  "license": "MIT",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "tymski <tymon.oziemblewski@gmail.com>",
+  "license": "ISC",
   "dependencies": {
     
   }
