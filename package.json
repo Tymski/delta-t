@@ -19,5 +19,10 @@
   "bugs": {
     "url": "https://github.com/Tymski/delta-t/issues"
   },
-  "homepage": "https://github.com/Tymski/delta-t#readme"
+  "homepage": "https://github.com/Tymski/delta-t#readme",
+  "keywords": [
+    "delta",
+    "difference",
+    "time"
+  ]
 }
