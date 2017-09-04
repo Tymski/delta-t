@@ -11,5 +11,13 @@
   "dependencies": {},
   "devDependencies": {
     "performance-now": "^2.1.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Tymski/delta-t.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Tymski/delta-t/issues"
+  },
+  "homepage": "https://github.com/Tymski/delta-t#readme"
 }
