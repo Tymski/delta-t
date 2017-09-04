@@ -15,6 +15,9 @@ module.exports =
             if (current == null)this._previous = this._current;
             if(typeof differenceFunction === "function"){
                 this.differenceFunction = differenceFunction;
+                this.useStaticDifferenceFunction = false;
+            }else{
+                this.useStaticDifferenceFunction = true;
             }
         }
         get current() {
@@ -30,14 +33,19 @@ module.exports =
         }
         get difference() {
             if (this._changed) {
-                this._difference = this.differenceFunction(this._current, this._previous);
+                if(this.useStaticDifferenceFunction){
+                    this._difference = Δ.differenceFunction(this._current, this._previous);
+                } else{
+                    this._difference = this.differenceFunction(this._current, this._previous);
+                }
                 this._changed = false;
             }
             return this._difference;
         }
-        differenceFunction(x1, x2, ε = Number.EPSILON) {
-            if (Math.abs(x1 - x2) < ε) return 0;
-            else return x1 - x2;
+        static differenceFunction(x1, x2, ε = Number.EPSILON) {
+            let tmp = x1-x2;
+            if (Math.abs(tmp) < ε) return 0;
+            else return tmp;
         }
         update() {
             this.current = this.updateFunction();

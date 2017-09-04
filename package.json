@@ -1,14 +1,15 @@
 {
-  "name": "delta-x",
+  "name": "delta-t",
   "version": "0.0.1",
-  "description": "A little utility that allows for calculating and keeping track of differences in values.",
+  "description": "A little utility that allows calculating and keeping track of differences in values. Default keeps track of time.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "tymski <tymon.oziemblewski@gmail.com>",
+  "author": "tymski <tymon.oziemblewski@gmail.com> (https://tymski.github.io)",
   "license": "ISC",
-  "dependencies": {
-    
+  "dependencies": {},
+  "devDependencies": {
+    "performance-now": "^2.1.0"
   }
 }
