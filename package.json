@@ -1,6 +1,6 @@
 {
   "name": "delta-t",
-  "version": "0.0.1",
+  "version": "0.0.15",
   "description": "A little utility that allows calculating and keeping track of differences in values. Default keeps track of time.",
   "main": "index.js",
   "scripts": {
